@@ -7,18 +7,16 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Abstract
-Here, I reexcamine the analysis of Oeppen and Vaupel (2002).
-```{r cars}
-summary(cars)
+#Abstract 
+Here, I re-examine the analysis of Oepper and Vaupel (2002).
+```{r}
+library(tidyverse)
+library(gapminder)
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+data(gapminder_unfiltered)
+nrow(gapminder_unfiltered)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
